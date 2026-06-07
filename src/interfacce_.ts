@@ -9,3 +9,4 @@ const myApp: app = {
     
 };
 console.log(myApp.name);
+const age: Array<number> = [25, 30, 35];

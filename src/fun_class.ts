@@ -4,10 +4,14 @@ function detail(me: me): string {
 }
 const peerson: me = { name: "John", age: 30 };
 console.log(detail(peerson));
-
-class Person {
-    public name: string;
-    public age: number;
+interface mee {
+    readonly name: string;
+    readonly age: number;
+    detail(): string;
+}
+class Person implements mee {
+     readonly name: string;
+     readonly age: number;
 
     constructor(name: string, age: number) {
         this.name = name;
